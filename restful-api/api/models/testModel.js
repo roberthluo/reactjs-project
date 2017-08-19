@@ -18,11 +18,11 @@ var userSchema = new Schema
       age: Number,
       website: String,
       status: String
-  }
+  },
   created_at: Date,
   updated_at: Date
-})
+});
 
-module.exports = mongoose.model('Users', UserSchema);
+module.exports = mongoose.model('Users', userSchema);
 
-module.exports = User;
+//module.exports = User;

@@ -1,4 +1,4 @@
-'user strict':
+'use strict';
 
 
 var mongoose = require('mongoose'),
@@ -6,7 +6,7 @@ var mongoose = require('mongoose'),
 
 exports.list_all_users = function(req, res)
 {
-  user.find({}, function(err, user))
+  user.find({}, function(err, user)
   {
     if (err)
       res.send(err);
@@ -54,4 +54,3 @@ exports.delete_a_user = function(req, res)
     res.json({ message: 'User successfully Deleted'});
   });
 };
-}
