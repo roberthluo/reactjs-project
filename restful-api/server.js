@@ -7,7 +7,7 @@
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Tododb', {
+mongoose.connect('mongodb://localhost/user_test', {
   useMongoClient: true
 
 });
